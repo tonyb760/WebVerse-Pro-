@@ -397,6 +397,6 @@ const payload = jwt.verify(token, SECRET_KEY, {
 ---
 
 <p align="center">
-  <sub>Writeup by <b>BlackMagic Operator</b> · Lab by <a href="https://medium.com/@7s26simon">7s26simon</a> on WebVerse Pro</sub><br>
+  <sub>Writeup by <b>oxTonyb</b> · Lab by <a href="https://medium.com/@7s26simon">7s26simon</a> on WebVerse Pro</sub><br>
   <sub>No flags or direct spoilers — methodology and technique only</sub>
 </p>
