@@ -296,4 +296,4 @@ The vulnerability was architectural — a trust assumption between two component
 
 ---
 
-*Writeup by [kernel32](https://github.com/kernel32) · Published June 2026 · For educational purposes only.*
+*Writeup by [0xTonyb](https://github.com/kernel32) · Published June 2026 · For educational purposes only.*
