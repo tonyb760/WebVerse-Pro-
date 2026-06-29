@@ -44,10 +44,6 @@ The application presents itself like an old-school news portal:
 
 Nothing immediately screams "admin panel" or "obvious secret page." That is a good sign in a beginner lab: the vulnerability is discoverable, but you still need to ask what each feature is really doing.
 
-<p align="center">
-  <img src="https://dummyimage.com/900x420/0f172a/e2e8f0.png&text=NewsForge+landing+page+placeholder" alt="NewsForge landing page placeholder">
-</p>
-
 ---
 
 ## Recon Notes
@@ -137,10 +133,6 @@ The final proof was editing an article as a normal logged-in user. That demonstr
 - The application confirmed the action after saving.
 
 I am intentionally omitting the final flag and exact route. If you are working through the lab, the discovery is the valuable part.
-
-<p align="center">
-  <img src="https://dummyimage.com/900x360/111827/93c5fd.png&text=Article+edit+proof+placeholder" alt="Article edit proof placeholder">
-</p>
 
 ---
 
