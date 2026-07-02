@@ -149,7 +149,7 @@ curl -s 'http://app.dockethive.io/download.php?file=php://filter/convert.base64-
 
 And there it is:
 
-> **Flag:** `WEBVERSE{php_f1lt3r_3r1c_h0m3_lf1}`
+> **Flag:** `WEBVERSE{php_f1lt*************lf1}`
 
 ---
 
