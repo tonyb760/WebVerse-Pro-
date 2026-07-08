@@ -4,7 +4,7 @@
 > **Category:** Web Security  
 > **Difficulty:** Medium  
 > **Primary Bug:** Server-Side Request Forgery via server-side PDF rendering  
-> **Flag:** `WEBVERSE{SSRF_VIA_PDF_FTW}`
+> **Flag:** `WEBVERSE{SSRF_******_FTW}` Redacted
 
 ---
 
