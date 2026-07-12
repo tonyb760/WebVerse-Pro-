@@ -1,61 +1,54 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&color=3B82F6&center=true&vCenter=true&width=600&lines=%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90;%E2%94%82++WebVerse+Pro+Labs++%E2%94%82;%E2%94%94%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%98" alt="WebVerse Pro Labs" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-WebVerse%20Pro-3B82F6?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Platform" />
-  <img src="https://img.shields.io/badge/Focus-Web%20Security-EC4899?style=for-the-badge&logo=owasp&logoColor=white" alt="Focus" />
-  <img src="https://img.shields.io/badge/Machines-Pwned-10B981?style=for-the-badge&logo=hack-the-box&logoColor=white" alt="Machines" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:020617,42:0F172A,72:2563EB,100:A855F7&text=WebVerse%20Pro&fontColor=F8FAFC&fontSize=64&fontAlignY=38&desc=web%20security%20labs%20%E2%80%A2%20full%20chains%20%E2%80%A2%20evidence-first%20learning&descSize=18&descAlignY=61&animation=fadeIn" width="100%" />
 
 <br />
 
-<p align="center">
-  <i>⚔️ &nbsp; No spoilers. No flags. Just the craft. &nbsp; ⚔️</i>
-</p>
+[![Focus](https://img.shields.io/badge/Focus-Web%20Security-2563EB?style=for-the-badge&logo=owasp&logoColor=white)](#the-archive)
+[![Writeups](https://img.shields.io/badge/Archive-24%20Guides-A855F7?style=for-the-badge&logo=markdown&logoColor=white)](#field-guide)
+[![Practice](https://img.shields.io/badge/Practice-Authorized%20Labs-22C55E?style=for-the-badge&logo=hackthebox&logoColor=white)](#responsible-use)
+
+<br />
+
+> **Observe the surface. Model the trust boundary. Prove the chain. Document the lesson.**
+
+A practical archive of WebVerse Pro lab walkthroughs, challenge notes, and methodology built for people who want to understand *why* a path works—not merely that it works.
+
+</div>
 
 ---
 
-## 🧭 What Is This?
+## The Archive
 
-A growing archive of **technical writeups** for machines on
-[**WebVerse Pro Labs**](https://dashboard.webverselabs-pro.com) —
-a hands-on platform for web security practitioners.
+WebVerse Pro is a growing collection of hands-on security labs. This repository turns each completed environment into a durable reference: the recon that mattered, the assumptions that failed, the exploit chain that held, and the defensive lesson left behind.
 
-Every guide here follows one rule:
-
-> **Cover the technique, not just the answer.**
-
-You'll find the methodology, the dead ends, the "why," and the
-remediation — never a copy-paste flag. If you want the win,
-put in the work. These notes are here to help you *learn*, not
-to help you skip.
-
----
-
-## ⚡ The Philosophy
+```text
+  RECON ──> EVIDENCE ──> HYPOTHESIS ──> VALIDATION ──> ACCESS ──> LESSON
+    │                                                                  │
+    └─────────────────────── document the reasoning ──────────────────┘
+```
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### 🔍 What You'll Find Here
+### Evidence first
 
-- Step-by-step **attack chains**, from recon to root
-- **Diagrams** explaining the architecture before the exploit
-- **Raw payloads** with byte-level walkthroughs
-- **Remediation** advice — what the box got wrong, and how to fix it
-- Links to **RFCs, CVEs, and research** that back the techniques
+Services, response behavior, source artifacts, and protocol details decide the next move. Tools gather evidence; they do not replace the model.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### 🚫 What You Won't Find
+### Full-chain learning
 
-- Literal flags or credentials
-- "Just run this script" walkthroughs
-- Spoilers that rob you of the *aha* moment
-- Answers without explanation
+Retired and authorized material includes the commands, payloads, credentials, pivots, and outcomes needed to reproduce the reasoning responsibly.
+
+</td>
+<td width="33%" valign="top">
+
+### Defender-minded notes
+
+Every useful offensive path is also a trust-boundary failure. Writeups connect the technique to detection and remediation.
 
 </td>
 </tr>
@@ -63,70 +56,121 @@ to help you skip.
 
 ---
 
-## 🗺️ Machine Index
+## Publication Philosophy
 
-<p align="center">
-  <i>Each machine teaches a technique. Here's the syllabus.</i>
-</p>
+This archive is designed to be **useful at the keyboard**. For retired labs and explicitly authorized training environments, guides may include exact commands, recovered credentials, payloads, full exploit chains, and completion evidence. The goal is reproducibility—not vague advice that leaves the hardest reasoning implicit.
 
-### 📡 Spread <kbd>Medium</kbd>
-
-> *"A weekend CSV tool whose ops console is blocked at an edge proxy — but the app trusts the network."*
-
-| | |
+| Published here | Kept spoiler-safe or excluded |
 |---|---|
-| **Technique** | CL.TE HTTP Request Smuggling |
-| **Concepts** | Proxy bypass, Content-Length vs. Transfer-Encoding desync, keep-alive connection poisoning |
-| **Services** | Gateway (edge proxy) + Gunicorn/Flask |
-| **Lesson** | Blocking a path at the proxy is not access control |
+| Validated commands and tool usage | Active or unreleased lab solutions |
+| Credentials and access paths from retired/authorized labs | Credentials for real systems or third parties |
+| Payload construction and protocol-level evidence | Techniques used outside explicit authorization |
+| Dead ends, corrections, and the reasoning behind the route | “Run this blindly” instructions without context |
+| Detection and hardening takeaways | Material that would compromise a live environment |
+
+> **The standard is simple:** share the full chain when it supports authorized learning; preserve the boundary when a target is active or not yours to test.
+
+---
+
+## Field Guide
+
+### Full Environment Writeups
+
+| Environment | Focus | Guide |
+|---|---|---|
+| **BombThreat** | Web exploitation and attack-chain analysis | [Open guide](./BombThreat_Guide.md) |
+| **DocketHive** | Web application enumeration and compromise | [Open guide](./DocketHive.md) |
+| **Inked** | Web service investigation and exploitation | [Open guide](./Inked.md) |
+| **JurryHurry** | Application attack surface and validation | [Open guide](./JurryHurry.md) |
+| **NewsForge** | Web workflow and trust-boundary analysis | [Open guide](./NewsForge.md) |
+| **NorthKorea** | Web exploitation methodology | [Open guide](./NorthKorea.md) |
+| **Parcel** | Web service enumeration and attack path development | [Open guide](./Parcel.md) |
+| **PhotoStore** | Application logic and web security testing | [Open guide](./PhotoStore.md) |
+| **ReportVerse** | Web application attack-chain analysis | [Open guide](./ReportVerse.md) |
+| **Spread** | CL.TE HTTP request smuggling and proxy bypass | [Open guide](./spread-writeup.md) |
+
+### Challenge Notes
+
+Small environments, focused concepts, and compact walkthroughs for sharpening a single idea at a time.
+
+| Challenge | Guide | Challenge | Guide |
+|---|---|---|---|
+| Brackish Brewing | [Read](./brackish-brewing.md) | Coltsfoot Community Center | [Read](./coltsfoot-community-center.md) |
+| Cookie Cutter | [Read](./cookie-cutter.md) | Halftrack Model Railroad Club | [Read](./halftrack-model-railroad-club.md) |
+| HammerHopper | [Read](./HammerHopper.md) | Header Hunt | [Read](./header-hunt.md) |
+| Hollow Run Bedding | [Read](./hollow-run-bedding.md) | Lake Forks Permits | [Read](./lake-forks-permits.md) |
+| Loop and Roam Records | [Read](./loop-and-roam-records.md) | Pebble and Pine | [Read](./pebble-and-pine.md) |
+| QuikPay Receipts | [Read](./quikpay-receipts.md) | Ridgeline Hotels Session Swap | [Read](./ridgeline-hotels-session-swap.md) |
+| Spindrift Workspace | [Read](./spindrift-workspace.md) | Vellichor Press | [Read](./vellichor-press.md) |
+
+---
+
+## Spotlight: Spread
+
+> *A weekend CSV tool has an operations console blocked by an edge proxy—but the application trusts the network behind it.*
+
+```mermaid
+flowchart LR
+    A[Raw HTTP request] --> B[Edge proxy]
+    B -->|Parses one boundary| C[Application server]
+    C -->|Parses another boundary| D[Internal route reached]
+```
+
+| Surface | Detail |
+|---|---|
+| **Technique** | CL.TE HTTP request smuggling |
+| **Concepts** | Proxy bypass, Content-Length / Transfer-Encoding desynchronization, keep-alive poisoning |
+| **Stack** | Gateway proxy + Gunicorn / Flask |
+| **Core lesson** | A proxy path block is not application-layer authorization |
 | **Writeup** | [`spread-writeup.md`](./spread-writeup.md) |
-| **Lab** | [WebVerse Pro →](https://dashboard.webverselabs-pro.com/labs/spread) |
-
-<br />
 
 ---
 
+## How to Read a Writeup
+
+```text
+01  Map the exposed surface        What does the target actually reveal?
+02  Separate facts from guesses    Which claim is supported by evidence?
+03  Test one hypothesis at a time  What result would confirm or reject it?
+04  Trace the trust boundary       Where does one component trust another?
+05  Reproduce and explain          Why did the final chain work?
+06  Defend the lesson              How should this be detected or prevented?
 ```
- ┌──────────────────────────────────────────────────────────┐
- │                    MORE COMING SOON                       │
- │  ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   │
- └──────────────────────────────────────────────────────────┘
-```
+
+The strongest takeaway is rarely a particular command. It is the ability to recognize the same broken assumption in the next environment.
 
 ---
 
-## 🧰 The Toolkit
-
-These are the tools, references, and mental models I lean on across machines.
-They're worth having in your own bag.
+## Toolkit
 
 <table>
 <tr>
-<td>
+<td width="50%" valign="top">
 
-**🔬 Testing**
+### Discovery and validation
+
 - [Burp Suite](https://portswigger.net/burp)
 - [Caido](https://caido.io)
-- [curl + raw sockets](https://curl.se)
-
-**📡 Recon**
+- [curl](https://curl.se) and raw sockets
 - [Nmap](https://nmap.org)
 - [FFuF](https://github.com/ffuf/ffuf)
 - [httpx](https://github.com/projectdiscovery/httpx)
 
 </td>
-<td>
+<td width="50%" valign="top">
 
-**📚 Reference**
+### References and mental models
+
 - [PortSwigger Research](https://portswigger.net/research)
-- [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
-- [RFC 7230 — HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc7230)
+- [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+- [HTTP Semantics](https://httpwg.org/specs/)
 - [HackTricks](https://book.hacktricks.xyz)
 
-**🧠 Mental Models**
-- Trust boundaries are where bugs live
-- The proxy is not the app
-- Desync thrives on ambiguity
+```text
+The proxy is not the app.
+The response is not the whole system.
+Trust boundaries are where bugs live.
+```
 
 </td>
 </tr>
@@ -134,47 +178,41 @@ They're worth having in your own bag.
 
 ---
 
-## 📂 Repository Map
+## Repository Map
 
-```
+```text
 WebVerse-Pro-/
 │
-├── README.md                  ← you are here
-│
-├── spread/
-│   ├── spread-writeup.md      ← CL.TE smuggling walkthrough
-│   └── assets/                ← diagrams, screenshots
-│
-├── <next-box>/
-│   └── ...
-│
-└── templates/
-    └── writeup-template.md    ← blank guide for new machines
+├── README.md                         ← archive navigation
+├── *Guide.md / *.md                  ← full environment writeups
+├── challenge-name.md                 ← focused challenge notes
+└── spread-writeup.md                 ← request-smuggling deep dive
 ```
 
----
-
-## ⚠️ Disclaimer
-
-These writeups are for **educational purposes only**. Every technique
-described here was tested in an isolated lab environment explicitly
-designed for security training.
-
-- Don't test these techniques against systems you don't own or have
-  explicit permission to test.
-- WebVerse Pro Labs provides the infrastructure — use it.
-- Understanding how attacks work makes you a better defender.
-  Use that knowledge responsibly.
+Paths stay stable so that bookmarks, linked writeups, and references continue to work.
 
 ---
 
-<p align="center">
-  <br />
-  <img src="https://img.shields.io/badge/made%20with-%E2%99%A5%20%2B%20raw%20sockets-red?style=flat-square" alt="made with" />
-  <br /><br />
-  <a href="https://dashboard.webverselabs-pro.com">
-    <img src="https://img.shields.io/badge/WebVerse_Pro-Labs-3B82F6?style=for-the-badge&logo=google-cloud&logoColor=white" alt="WebVerse Pro" />
-  </a>
-  <br /><br />
-  <sub>© 2026 · <a href="https://github.com/tonyb760">tonyb760</a> · Crafted with curiosity</sub>
-</p>
+## Responsible Use
+
+Everything in this repository is intended for **authorized security training, lab environments, and defensive learning**.
+
+- Test only systems you own or have explicit permission to assess.
+- Treat published lab credentials as lab-only artifacts, never as material for credential reuse.
+- Use the full chains to improve investigation, engineering, and detection—not to target real systems.
+- If a guide is too revealing for an active environment, keep it private until that boundary changes.
+
+---
+
+<div align="center">
+
+[![Explore WebVerse Pro](https://img.shields.io/badge/Explore-WebVerse%20Pro-2563EB?style=for-the-badge&logo=google-cloud&logoColor=white)](https://dashboard.webverselabs-pro.com)
+[![Profile](https://img.shields.io/badge/Author-tonyb760-A855F7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tonyb760)
+
+<br />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:A855F7,45:2563EB,100:020617" width="100%" />
+
+<sub>Built for curiosity, repeatability, and responsible practice.</sub>
+
+</div>
