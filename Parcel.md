@@ -7,7 +7,7 @@
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║   WEBVERSE{gridmark_l1c3ns3_k3y_4cc3ss}                    ║
+║   WEBVERSE{gridmark_*************_4cc3ss}                    ║
 ║                                                              ║
 ║   Classification: INTERNAL FULL-EVIDENCE REPORT              ║
 ║   Target: app.gridmark.io (10.100.172.14)                    ║
@@ -137,7 +137,7 @@ The config page displayed all platform settings. Row 7 held the prize:
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║          WEBVERSE{gridmark_l1c3ns3_k3y_4cc3ss}              ║
+║          WEBVERSE{gridmark_***********y_4cc3ss}              ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
