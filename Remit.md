@@ -18,7 +18,7 @@
 |---|---|---|
 | `Remit` | Plain supplier account | Review-console access and command execution |
 | Platform | Webverse Pro | **First Blood** |
-| Flag | Captured | `WEBVERSE{00xml_bl1nd_xxe_php_f1lt3r_t0_0bj_1nj3ct}` |
+| Flag | Captured | `WEBVERSE{00xml_bl1nd_**********************_1nj3ct}` |
 
 </div>
 
@@ -382,7 +382,7 @@ uid=1201(avery) gid=1201(avery) groups=1201(avery)
 A bounded search of the review container’s environment and application paths returned:
 
 ```text
-WEBVERSE{00xml_bl1nd_xxe_php_f1lt3r_t0_0bj_1nj3ct}
+WEBVERSE{00xml_bl1nd_**********************_1nj3ct}
 ```
 
 <div align="center">
@@ -391,7 +391,7 @@ WEBVERSE{00xml_bl1nd_xxe_php_f1lt3r_t0_0bj_1nj3ct}
 ╔══════════════════════════════════════════════════════════════╗
 ║ FIRST BLOOD                                                  ║
 ║                                                              ║
-║ WEBVERSE{00xml_bl1nd_xxe_php_f1lt3r_t0_0bj_1nj3ct}          ║
+║ WEBVERSE{00xml_bl1nd_**********************_1nj3ct}          ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
